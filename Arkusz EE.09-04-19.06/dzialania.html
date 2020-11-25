@@ -41,5 +41,37 @@
 <footer>
 <p>Autor: Beniamin</p>
 </footer>
+ <script>
+    function dodawanie(){
+        var a = +document.getElementById("A").value;
+        var b = +document.getElementById("B").value;
+        var wynik = a + b;
+        document.getElementById("wynik").innerHTML = "Wynik: " + wynik;
+    }
+    function odejmowanie(){
+        var a = +document.getElementById("A").value;
+        var b = +document.getElementById("B").value;
+        var wynik = a - b;
+        document.getElementById("wynik").innerHTML = "Wynik: " + wynik;
+    }
+    function mnozenie(){
+        var a = +document.getElementById("A").value;
+        var b = +document.getElementById("B").value;
+        var wynik = a * b;
+        document.getElementById("wynik").innerHTML = "Wynik: " + wynik;
+    }
+    function dzielenie(){
+        var a = +document.getElementById("A").value;
+        var b = +document.getElementById("B").value;
+        var wynik = a / b;
+        document.getElementById("wynik").innerHTML = "Wynik: " + wynik;
+    }
+    function potegowanie(){
+        var a = +document.getElementById("A").value;
+        var b = +document.getElementById("B").value;
+        var wynik = a ** b;
+        document.getElementById("wynik").innerHTML = "Wynik: " + wynik;
+    }
+</script>
 </body>
 </html>
