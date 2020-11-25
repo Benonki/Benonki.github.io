@@ -28,5 +28,11 @@ spalanie samochodu w l/100km<br/><input type="number"></input><br/>
 <section id="spr">
 <a href="kwerendy.txt">Tu pobierzesz zapytania</a>
 </section>
+<script>
+    function oblicz(){
+        var a = +document.getElementById("dystans").value;
+        var b = +document.getElementById("spalanie").value;
+        var wynik = (a/100) * b;
+        document.getElementById("wynik").innerHTML= "Potrzebujesz:  "+ wynik +" litrów paliwa";
 </body>
 </html>
