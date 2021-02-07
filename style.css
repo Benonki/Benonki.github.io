@@ -92,3 +92,18 @@ text-shadow: 2px 2px black;
 .sc:hover{
 	border-color:red;
 }
+@media (max-width:625px){
+	  a.gor{
+		  display:inline-block;
+		  width:100%;
+	  }
+	  .sc{
+		  width:220px;
+		  height:220px;
+	  }
+	  .sc h3{
+		  opacity:1;
+		  background: rgba(0,0,0, 0.2);
+	  }
+  }
+  
