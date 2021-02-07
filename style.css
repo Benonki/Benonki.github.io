@@ -70,9 +70,9 @@ text-shadow: 2px 2px black;
 	display:inline-block;
 }
 .sc{
-	width: 400px;
-	height: 220px;
-	border: 1px solid silver;
+	width: 350px;
+	height: 180px;
+	border: 1.5px solid silver;
 	border-radius: 2px;
 	margin: auto;
 	float:left;
@@ -82,11 +82,11 @@ text-shadow: 2px 2px black;
 .sc h3{
 	opacity: 0;
 	text-align: center;
-	padding: 50%;
-	transition: 0.5s;
+	padding: 15%;
+	transition: 0.4s;
 }
 .sc:hover h3{
-	background: rgba(0,0,0, 0.4);
+	background: rgba(0,0,0, 0.2);
 	opacity: 1;
 }
 .sc:hover{
