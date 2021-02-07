@@ -66,13 +66,13 @@ text-shadow: 2px 2px black;
 }
 }
 .Projekty{
-	margin:0.2%;
+	margin:0.1%;
 	display:inline-block;
 }
 .Obrazek{
-	width: 400px;
-	height: 220px;
-	border: 2px solid black;
+	width: 350px;
+	height: 180px;
+	border: 1.5px solid silver;
 	border-radius: 2px;
 	margin: auto;
 	float:left;
@@ -82,15 +82,15 @@ text-shadow: 2px 2px black;
 .Obrazek h3{
 	opacity: 0;
 	text-align: center;
-	padding: 10%;
-	transition: 0.5s;
+	padding: 50%;
+	transition: 0.4s;
 }
 .Obrazek:hover h3{
-	background: rgba(0,0,0, 0.4);
+	background: rgba(0,0,0, 1);
 	opacity: 1;
 }
 .Obrazek:hover{
-	border-color:green;
+	border-color:red;
 }
 @media (max-width:625px){
 	  a.naw{
@@ -103,7 +103,7 @@ text-shadow: 2px 2px black;
 	  }
 	  .Obrazek h3{
 		  opacity:1;
-		  background: rgba(0,0,0, 0.4);
+		  background: rgba(0,0,0, 1);
 	  }
   }
   
