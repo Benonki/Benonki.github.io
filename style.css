@@ -7,7 +7,7 @@ html{
 }
 
 body{
-	background-color:#31332d;
+	background-color:#fcfcfc;
 	box-sizing: border-box;
 	font-family: Times New Roman;
 	color:#0d0c0c;
@@ -23,7 +23,7 @@ nav{
  font-size:30px;
  text-align:center;
  padding:15px 0;
- background-color:#beb8d6;
+ background-color:#262626;
 }
 a.gor{
 	display:inline-block;
