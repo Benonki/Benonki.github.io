@@ -66,13 +66,13 @@ text-shadow: 2px 2px black;
 }
 }
 .proj{
-	margin:0.3%;
+	margin:0.2%;
 	display:inline-block;
 }
 .sc{
 	width: 400px;
 	height: 220px;
-	border: 1.5px solid silver;
+	border: 1px solid silver;
 	border-radius: 2px;
 	margin: auto;
 	float:left;
@@ -86,7 +86,7 @@ text-shadow: 2px 2px black;
 	transition: 0.5s;
 }
 .sc:hover h3{
-	background: rgba(0,0,0, 0.2);
+	background: rgba(0,0,0, 0.4);
 	opacity: 1;
 }
 .sc:hover{
