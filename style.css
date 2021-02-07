@@ -23,7 +23,7 @@ nav{
  font-size:30px;
  text-align:center;
  padding:15px 0;
- background-color:#262626;
+ background-color:silver;
 }
 a.gor{
 	display:inline-block;
@@ -33,6 +33,7 @@ a.gor{
 
 
 .dol{
+	color:silver;
 	text-align:center;
 	height:100px;
 	padding-bottom:200px;
