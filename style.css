@@ -70,8 +70,8 @@ text-shadow: 2px 2px black;
 	display:inline-block;
 }
 .Obrazek{
-	width: 350px;
-	height: 180px;
+	width: 400px;
+	height: 220px;
 	border: 1.5px solid silver;
 	border-radius: 2px;
 	margin: auto;
@@ -83,10 +83,10 @@ text-shadow: 2px 2px black;
 	opacity: 0;
 	text-align: center;
 	padding: 50%;
-	transition: 0.4s;
+	transition: 0.5s;
 }
 .Obrazek:hover h3{
-	background: rgba(0,0,0, 1);
+	background: rgba(0,0,0, 0.2);
 	opacity: 1;
 }
 .Obrazek:hover{
@@ -103,7 +103,7 @@ text-shadow: 2px 2px black;
 	  }
 	  .Obrazek h3{
 		  opacity:1;
-		  background: rgba(0,0,0, 1);
+		  background: rgba(0,0,0, 0.2);
 	  }
   }
   
