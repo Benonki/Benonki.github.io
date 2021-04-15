@@ -90,7 +90,7 @@ text-shadow: 2px 2px black;
 	opacity: 1;
 }
 .sc:hover{
-	border-color:red;
+	border-color:blue;
 }
 @media (max-width:625px){
 	  a.gor{
