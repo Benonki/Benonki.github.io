@@ -13,6 +13,8 @@ body{
 	color:#0d0c0c;
 	min-height:100%;
 	position:relative;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 header{
 	text-align:center;
