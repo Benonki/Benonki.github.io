@@ -3,9 +3,11 @@ color: white;
 text-align: center;
 height: 370px;
 }
-#srodek{
-background-color: WhiteSmoke;
-height: 50px;
+#main
+{
+    background-color: WhiteSmoke;
+    height: 50px;
+    clear: both;
 }
 #lewy{
 	background-color: WhiteSmoke;
