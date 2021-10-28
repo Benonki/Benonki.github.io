@@ -4,7 +4,7 @@
 <title>Kalkulator</title>
 </head>
 <body>
-<form method="post" attribute="post" action="kalk.php">
+<form method="post" attribute="post" action="2kalk.php">
 <p>First Value:</br>
 <input type="text" id ="first" name="first"></p>
 <p>Second Value:</br>
@@ -22,32 +22,43 @@
 <?php
 $first = $_POST['first'];
 $second = $_POST['second'];
-function add($_POST('group1')){
-$wynikdod= $first+$second;
-return $wynikdod;
+function add($first, $second) {
+return $first + $second; }
+function sub($first, $second){
+return $first-$second; }
+function mul($first, $second){
+return $first*$second; }
+function div($first, $second){
+return $first/$second; }
+function pot($first, $second){
+return $first**$second; }
+function pie($first, $second){
+return $first**(1/$second);}
+switch($_POST['group1'])
+{
+case 'add':
+echo add($first, $second);
+break;
+case 'subtract':
+echo sub($first, $second);
+break;
+case 'times':
+echo mul($first, $second);
+break;
+case 'divide':
+if($second==0) {
+echo "Nie dzielimy przez 0 gamoniu";
+break; }
+echo div($first, $second);
+break;
+case 'potega':
+echo pot($first, $second);
+break;
+case 'pierwiastek':
+
+echo pie($first, $second);
+break;
 }
-function add('add');
-//case 'subtract':
-//echo $first - $second;
-//break;
-//case 'times':
-//echo $first * $second;
-//break;
-//case 'divide':
-//if($second==0)
-//{
-//echo "Nie dzielimy przez 0 gamoniu";
-//break;	
-//}
-//echo $first / $second;
-//break;
-//case 'potega':
-//echo $first**$second;
-//break;
-//case 'pierwiastek':
-//echo $first**(1/$second);
-//break;
-//}
 ?>
 </body>
 </html>
