@@ -1,0 +1,11 @@
+<?php
+$connect = mysqli_connect("localhost","root","","NAZWA_BAZY (PLIKU)");
+$zapytanie =/* NAZWA ZAPYTANIA NP: */ "SELECT id, nazwa, wystepowanie FROM ryby WHERE ryby.styl_zycia=2";
+$random= mysqli_query($connect,$zapytanie);
+while($linia = mysqli_fetch_row($random))
+{
+	echo $linia[0].'. '.$linia[1].' '.$linia[2];  /* WYSWIETLA W KOLEJNOSCI ID -> NAZWA -> WYSTEPOWANIE */
+	echo '<br>';
+}
+mysqli_close($connect);
+?>
