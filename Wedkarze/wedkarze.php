@@ -13,6 +13,8 @@
 <img src = "szczupak.jpg" alt="szczupak">
 </div>
 <div id="p">
+  <?php
+  ?>
 <h3> Ryby spokojnego żeru (białe) </h3>
 <br>
 <li>1.<a href = https://wedkuje.pl/ target ="_blank">„Odwiedź także”</a href></li>
