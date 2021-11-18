@@ -1,0 +1,36 @@
+body {
+	font:Garamond;
+}	
+img {
+	padding:3px;
+	margin:15px;
+	border-style:dashed;
+	border-color:#3CB371;
+	border-width:2px;
+}
+#l  {
+	width:55%;
+	float: left;
+	height:450px;
+	background:#FAEBD7;
+}
+#p  {
+	width:45%;
+	float: right;
+	height:450px;
+	background:#FAEBD7;
+}
+header {
+	background:#3CB371;
+	color:white;
+	padding:10px;
+	font-size:130%;
+	text-align: center;
+}
+footer {
+background:#3CB371;
+	color:white;
+	padding:10px;
+	font-size:130%;
+	text-align: center;
+}
