@@ -1,11 +1,20 @@
 <?php
-$connect = mysqli_connect("localhost","root","","NAZWA_BAZY (PLIKU)");
-$zapytanie =/* NAZWA ZAPYTANIA NP: */ "SELECT id, nazwa, wystepowanie FROM ryby WHERE ryby.styl_zycia=2";
-$random= mysqli_query($connect,$zapytanie);
-while($linia = mysqli_fetch_row($random))
+	$connect = mysqli_connect("localhost","root","","szkoła");
+if($connect)
 {
-	echo $linia[0].'. '.$linia[1].' '.$linia[2];  /* WYSWIETLA W KOLEJNOSCI ID -> NAZWA -> WYSTEPOWANIE */
-	echo '<br>';
-}
+	$zapytanie = /* NAZWA ZAPYTANIA NP: */ "SELECT * FROM uczen";
+	$wynik= mysqli_query($connect,$zapytanie);
+if($wynik)
+  {
+while($linia = mysqli_fetch_array($wynik))
+    {
+	echo "ID ucznia ".$linia["id"]." Nazwisko: ".$linia["nazwisko"].'<br>'; /* WYSWIETLA W KOLEJNOSCI ID -> NAZWISKO */
+	}
+  }
 mysqli_close($connect);
+}
+else
+  {
+	echo "Nie udało połączyć się z bazą danych";
+  }
 ?>
