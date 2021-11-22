@@ -7,9 +7,9 @@ if($connect)
 if($wynik)
   {
 while($linia = mysqli_fetch_array($wynik))
-    {
+      {
 	echo "ID ucznia ".$linia["id"]." Nazwisko: ".$linia["nazwisko"].'<br>'; /* WYSWIETLA W KOLEJNOSCI ID -> NAZWISKO */
-	}
+      }
   }
 mysqli_close($connect);
 }
