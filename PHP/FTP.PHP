@@ -7,7 +7,7 @@
 <?php
 $host="localhost";
 $ftp_conn = ftp_connect($host, 21) or die("Nie można się połączyć z $host");
-$login = ftp_login($ftp_conn, "demo-user", "demo-user");
+$login = ftp_login($ftp_conn, "root", "");
 $server_file = "ftp_text.txt";
 $local_file = "ftp_text2.txt";
 $fp = fopen($local_file,"w");
