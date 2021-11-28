@@ -13,8 +13,8 @@ if($connect)
   }
     else
     	 {
-    	 	echo "Błąd wykonania zapytania";
-	     }
+    	  echo "Błąd wykonania zapytania";
+	 }
 mysqli_close($connect);
 }
 else
