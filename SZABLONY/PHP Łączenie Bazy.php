@@ -11,7 +11,11 @@ if($connect)
        echo "ID ucznia ".$linia["id"]." Nazwisko: ".$linia["nazwisko"].'<br>'; /* WYSWIETLA W KOLEJNOSCI ID -> NAZWISKO */
       }
   }
- mysqli_close($connect);
+    else
+    	 {
+    	 	echo "Błąd wykonania zapytania";
+	     }
+mysqli_close($connect);
 }
 else
   {
