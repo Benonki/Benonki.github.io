@@ -1,0 +1,9 @@
+Polecenie 1: select zespol1, zespol2, wynik, data_rozgrywki FROM rozgrywka where zespol1 = "EVG"
+
+Polecenie 2: SELECT imie, nazwisko FROM zawodnik WHERE pozycja_id =3
+
+Polecenie 3:SELECT z.id, z.nazwisko, p.nazwa FROM zawodnik z
+JOIN pozycja p ON z.pozycja_id = p.id
+WHERE p.id IN (1,2,3)
+
+Polecenie 4: DROP TABLE liga
