@@ -12,18 +12,20 @@
 </header>
 <div id="mecze">
 <?php
-$connect = mysqli_connect("localhost", "root", "", "egzamin");
+$connect = mysqli_connect("localhost", "root", "", "test");
 if($connect)
 {
 	$zapytanie="select zespol1, zespol2, wynik, data_rozgrywki FROM rozgrywka where zespol1 = 'EVG'";
 	$wynik = mysqli_query($connect,$zapytanie);
 	if($wynik)
 	{
-		while($linia=mysqli_fetch_array($wynik))
+		while($linia=mysqli_fetch_row($wynik))
 		{
-			echo '<h3>'.$linia["zespol1"]." - ".$linia["zespol2"].'</h3>';
-			echo '<h4>'.$linia["wynik"].'</h4>';
-			echo '<p>'.$linia["data_rozgrywki"].'</p>';
+			echo '<div class="roz">';
+			echo '<h3>'.$linia[0]." - ".$linia[1].'</h3>';
+			echo '<h4>'.$linia[2].'</h4>';
+			echo '<p>'.$linia[3].'</p>';
+			echo '</div>';
 		}
 	}
 	mysqli_close($connect);
@@ -51,7 +53,7 @@ if($liczba == NULL)
 }
 else 
 {
-	$connect = mysqli_connect("localhost", "root", "", "egzamin");
+	$connect = mysqli_connect("localhost", "root", "", "test");
 if($connect)
 {
 	$zapytanie="SELECT imie, nazwisko FROM zawodnik WHERE pozycja_id =".$liczba."";

@@ -3,7 +3,7 @@ header{
 	text-align: center;
 	height: 370px;
 }
-#mecze {
+.roz {
 	color: white;
 	text-align: center;
 	width: 200px;
@@ -12,13 +12,15 @@ header{
 	border-style:solid;
 	border-color:black;
 	border-radius: 10px;
+	float: left;
 }
-#mecze:hover {
+.roz:hover {
 	border: 1px solid #FFFFFF;
 }
 main {
 	background-color:WhiteSmoke;
 	height:50px;
+	clear: both;
 }
 #lewo {
 	background-color:WhiteSmoke;
