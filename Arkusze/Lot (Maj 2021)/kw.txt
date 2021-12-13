@@ -1,0 +1,11 @@
+1: select czas, kierunek, nr_rejsu, status_lotu from przyloty order by czas
+
+2: SELECT Count(*) FROM `przyloty` WHERE czas >= "10:00:00" and czas <= "10:59:00"
+
+3: SELECT p.nr_rejsu, s.typ FROM przyloty p
+JOIN samoloty s ON s.id=p.samoloty_id
+WHERE kierunek="Warszawa"
+
+4: update odloty set status_lotu="opóźnienie 20 min"
+where nr_rejsu = "LX5673"
+
