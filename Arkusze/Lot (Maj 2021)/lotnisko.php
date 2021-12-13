@@ -42,11 +42,11 @@ else
 </main>
 <div id="s1">
 <?php
-$Miesiąc = 120; 
-setcookie ("UserVisit", date ("F jS - g: i a"), $Miesiąc);
+$czas = 7200; 
+setcookie ("UserVisit", $czas);
 if (isSet ($_COOKIE ['UserVisit'])) 
 { 
-echo '<p><i>'."Witaj ponownie  na stronie lotniska".'</i></p>'; 
+echo '<p>'.'<i>'."Witaj ponownie  na stronie lotniska".'</i>'.'</p>'; 
 } 
 else 
 { 
