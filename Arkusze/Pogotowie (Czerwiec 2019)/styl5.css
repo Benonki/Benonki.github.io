@@ -5,8 +5,6 @@ body {
 	background-color: Sienna;
 	color: white;
 	height:150px;
-}
-#b1, #b2, #b3, #s1, #s2, #s3 {
 	float: left;
 }
 #b1, #s1{
