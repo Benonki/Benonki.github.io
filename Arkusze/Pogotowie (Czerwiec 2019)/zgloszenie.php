@@ -9,7 +9,7 @@
 $n1=$_POST['n1'];
 $n2=$_POST['n2'];
 $a=$_POST['a'];
-$czas=date("H:i:sa");
+$czas=date('H:i:sa');
 $connect=mysqli_connect("localhost", "root", "", "egzamin");
 if ($connect) {
 	$zapytanie="INSERT INTO zgloszenia VALUES (NULL, '.$n1.','.$n2.','.$a.',0,'.$czas.')";
