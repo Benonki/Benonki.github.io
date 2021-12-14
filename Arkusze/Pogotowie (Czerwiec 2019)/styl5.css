@@ -1,0 +1,36 @@
+body {
+	font-family: Georgia;
+}
+#b1, #b2, #b3, #s1, #s2, #s3 {
+	background-color: Sienna;
+	color: white;
+	height:150px;
+}
+#b1, #b2, #b3, #s1, #s2, #s3 {
+	float: left;
+}
+#b1, #s1{
+	width:40%;
+}
+#b2, #s2{
+	width:50%;
+	font-size:150%;
+}
+#b3, #s3{
+	width:10%;
+	text-align:center;
+}
+main{
+	background-color:Tan;
+	padding:100px;
+}
+a{
+	border: 1px dashed Sienna;
+	background-color:Tan;
+	color: Sienna;
+	padding:40px;
+	line-height: 150px;
+}
+li {
+	list-style-type: circle;
+}
