@@ -1,0 +1,65 @@
+body{
+	font-family: Tahoma;
+}
+header{
+	background-color: #115C97;
+	color: DodgerBlue;
+	height: 100px;
+	width: 50%;
+	text-align: center;
+	font-size: 150%;
+	float: left;
+}
+nav{
+	background-color: #115C97;
+	color: DodgerBlue;
+	height: 100px;
+	width: 50%;
+	text-align: center;
+	font-size: 150%;
+	float: right;
+}
+main{
+    background-color: #ACCEE8;
+	height: 400px;
+	padding: 30px;
+}
+a{
+	color: DodgerBlue;
+	margin: 10px;
+}
+table{
+	width: 100%;
+	border: 1px solid blue;
+}
+#lewyl{
+	background-color: #115C97;
+	height: 200px;
+	width: 25%;
+	float: left;
+}
+#lewys{
+	background-color: #115C97;
+	height: 200px;
+	width: 25%;
+	float: left;
+}
+#prawys{
+	background-color: #115C97;
+	height: 200px;
+	width: 25%;
+	float: left;
+}
+#prawyp{
+	background-color: #115C97;
+	height: 200px;
+	width: 25%;
+	float: right;
+}
+th{
+	background-color: #115C97;
+	color: white;
+}
+td{
+	border: 1px dashed blue;
+}
