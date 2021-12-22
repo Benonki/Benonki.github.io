@@ -1,0 +1,9 @@
+1:SELECT id, dataWyjazdu, cel, cena FROM wycieczki WHERE dostepna = 1
+
+2:SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis
+
+3:SELECT z.nazwaPliku, w.cel FROM zdjecia z
+JOIN wycieczki w ON w.zdjecia_id=z.id
+WHERE w.cena > 1000
+
+4:ALTER TABLE wycieczki ADD COLUMN dataPrzyjazdu DATE AFTER dataWyjazdu
