@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Usługi fryzjerskie</title>
+<link rel="stylesheet" href="styl2.css"/>
+</head>
+<body>
+<div id="l1">
+<h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+<img src="obraz2.jpg" alt="Czesanie">
+</div>
+<div id="l2">
+<h3>Dziś promocja na strzyżenie włosów</h3>
+<input type="radio" id="kr" name="fryz"> Krótkie <br>
+<input type="radio" id="sr" name="fryz"> Średnie <br>
+<input type="radio" id="po" name="fryz"> Półdługie <br>
+<input type="radio" id="dl" name="fryz"> Długie <br>
+<button type="submit" onclick="promo()">Odkryj promocję</button>
+<div id="wynik" style="margin-top: 10px"></div>
+<script>
+function promo() {
+var kr = document.getElementById("kr");
+var sr = document.getElementById("sr");
+var po = document.getElementById("po");
+var dl = document.getElementById("dl");
+var kro = 0;
+var sre = 0;
+var pol = 0;
+var dlu = 0;
+if (kr.checked == true) { kro = 25; }
+if (sr.checked == true) { sre = 30; }
+if (po.checked == true) { pol = 40; }
+if (dl.checked == true) { dlu = 50; }
+document.getElementById("wynik").innerHTML = "Cena strzyżenia: " + (kro + sre + pol + dlu);
+}
+</script>
+</div>
+<div id="p1">
+<h2>MENU</h2>
+</div>
+<div id="p2">
+<ol>
+<li><a href="fryzura.html">Strzyżenie</a></li>
+<ul>
+<li>krótkie</li>
+<li>średnie</li>
+<li>półdługie</li>
+<li>długie</li>
+</ul>
+<li>Czesanie</li>
+<li>Koloryzacja</li>
+</ol>
+</div>
+<div id="p3">
+<img src="obraz1.jpg" alt="Fryzjer">
+</div>
+<footer>
+<p>Autor: Beniamin</p>
+</footer>
+</body>
+</html>
