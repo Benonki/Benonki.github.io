@@ -1,0 +1,31 @@
+body {
+	font-family: Arial;
+}
+#b1 {
+	float: left;
+	background-color: #483D8D;
+	height: 150px;
+	width: 30%;
+}
+#b2 {
+	float: right;
+	background-color: #483D8D;
+	color: white;
+	height: 150px;
+	width: 70%;
+}
+.blok {
+	background-color: #AFEEEE;
+	width: 150px;
+	height: 100px;
+	margin: 3px;
+	border: 1px solid;
+}
+footer {
+	background-color: #483D8D;
+	color: white;
+	padding: 10px;
+}
+h5 {
+	text-align: center;
+}
