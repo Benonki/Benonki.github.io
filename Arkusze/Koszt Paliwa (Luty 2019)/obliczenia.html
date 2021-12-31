@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Stacja paliw</title>
+<link rel="stylesheet" href="styl3.css" type="text/css"/>
+</head>
+<body>
+<div id="l1">
+<h1>Stacja Paliw</h1>
+</div>
+<div id="p1">
+<a href="stacja.html"><img src="home.png"></a>
+<a href="obliczenia.html"><img src="znak.png"></a>
+</div>
+<main>
+<h3>Oblicz koszt paliwa</h3>
+Rodzaj paliwa (1-benzyna, 2-olej napędowy): <br> <input type="number" id="ro"> <br> 
+Ile litrów <br> <input type="number" id="il"> <br> 
+<button type="submit" onclick="oblicz()">OBLICZ</button>
+<div id ="wynik" style="margin-top: 10px"></div>
+<script>
+function oblicz() {
+var ro = +document.getElementById("ro").value;
+var il = +document.getElementById("il").value;
+if (ro == 1) {
+document.getElementById("wynik").innerHTML = "Koszt paliwa: " + (4*il) + " zł"; } 
+else if (ro == 2) {
+document.getElementById("wynik").innerHTML = "Koszt paliwa: " + (3.5*il) + " zł"; }
+else {
+document.getElementById("wynik").innerHTML = "Koszt paliwa wynosi 0 zł"; } }
+</script>
+</main>
+<div id="l2">
+<a href="kwerendy.txt">Pobierz kwerendy</a>
+</div>
+<div id="p2">
+<img src="samochod.png" alt="samochód">
+</div>
+<footer>
+<p>Stronę opracował: Beniamin</p>
+</footer>
+</body>
+</html>
