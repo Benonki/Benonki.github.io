@@ -17,18 +17,18 @@
 <img src="samochod.png" alt="grafika: samochód">
 </div>
 <main>
-<h2>Oferujemy paliwa:</h2>
-<table>
-<tr>
-<td>Rodzaj</td><td>Cena</td>
-</tr>
-<tr>
-<td>Benzyna</td><td>4 zł</td>
-</tr>
-<tr>
-<td>Olej napędowy</td><td>3,8 zł</td>
-</tr>
-</table>
+<h2>Oblicz, ile litrów musisz zatankować</h2>
+dystans do przejechania w km <br> <input type="number" id="dys"> <br>
+spalanie samochodu w l/100km <br> <input type="number" id="spa"> <br>
+<button type="submit" onclick="oblicz()">OBLICZ</button>
+<div id="wynik" style="margin-top: 10px"></div>
+<script>
+function oblicz () {
+var dys = +document.getElementById("dys").value; 
+var spa = +document.getElementById("spa").value; 
+document.getElementById("wynik").innerHTML = "Potrzebujesz: " + (dys/spa) + " litrów paliwa";
+}
+</script> 
 </main>
 <div id="ls">
 <p>Stronę opracował: Beniamin</p>
