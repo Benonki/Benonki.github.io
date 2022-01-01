@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Działania matematyczne</title>
+<link rel="Stylesheet" href="styl.css"/>
+</head>
+<body>
+<div id="b1">
+<img src="logo.jpg" alt="matematyka">
+</div>
+<div id="b2">
+<h1>Pomocnik Matematyczny</h1>
+</div>
+<div id="b3">
+<a href="dzialania.html"><h4>Działania</h4></a>
+</div>
+<div id="b4">
+<a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a>
+</div>
+<div id="l">
+<h3>Proste działania</h3>
+Liczba A: <input type="number" id="A"> <br>
+Liczba B: <input type="number" id="B"> <br>
+<button type="submit" onclick="oblicz(1)">+</button>
+<button type="submit" onclick="oblicz(2)">-</button>
+<button type="submit" onclick="oblicz(3)">*</button>
+<button type="submit" onclick="oblicz(4)">/</button>
+<button type="submit" onclick="oblicz(5)">A^B</button>
+<div id="wynik" style="margin-top: 10px"></div>
+<script>
+function oblicz(dzialanie) {
+var A = +document.getElementById("A").value;
+var B = +document.getElementById("B").value;
+switch(dzialanie) {
+case 1:
+document.getElementById("wynik").innerHTML = "Wynik: " + (A+B);
+break;
+case 2:
+document.getElementById("wynik").innerHTML = "Wynik: " + (A-B);
+break;
+case 3:
+document.getElementById("wynik").innerHTML = "Wynik: " + (A*B);
+break;
+case 4:
+if (B==0) {
+document.getElementById("wynik").innerHTML = "Nie dzielimy przez 0";
+} else {
+document.getElementById("wynik").innerHTML = "Wynik: " + (A/B); }
+break;
+case 5:
+document.getElementById("wynik").innerHTML = "Wynik: " + (A^B);
+break;
+} }
+</script>
+</div>
+<div id="p">
+<ul>
+<li>dodawania</li>
+<li>odejmowanie</li>
+<li>mnożenie</li>
+<li>dzielenie</li>
+<li>potęgowanie</li>
+</ul>
+</div>
+<footer>
+<p>Autor: Beniamin</p>
+</footer>
+</body>
+</html>
