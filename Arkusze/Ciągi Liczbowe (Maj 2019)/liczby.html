@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Ciągi liczbowe</title>
+<link rel="Stylesheet" href="styl2.css"/>
+</head>
+<body>
+<div id="b1">
+<h2>Poznaj Ciągi Liczbowe</h2>
+</div>
+<div id="b2">
+<a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+</div>
+<div id="b3">
+<a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+</div>
+<div id="b4">
+<img src="obraz1.png" alt="Fibonacci">
+</div>
+<div id="l">
+<ol>
+<li>ciągi arytmetyczne</li>
+<li>ciągi geometryczne</li>
+<li>ciąg Fibonacciego</li>
+</ol>
+</div>
+<div id="p">
+<h2>Generowanie ciągu arytmetycznego</h2>
+Pierwszy wyraz A1: <input type="number" id="A1"> <br>
+Różnica ciągu R: <input type="number" id="R"> <br>
+Liczba wyrazów w ciągu N: <input type="number" id="N"> <br>
+<button type="submit" onclick="ciag()">Generuj Ciąg</button>
+<div id="wynik" style="margin-top: 10px"></div>
+<script>
+function ciag() {
+var A1 = +document.getElementById("A1").value;
+var R = +document.getElementById("R").value;
+var N = +document.getElementById("N").value;
+var ciag = "Ciąg arytmetyczny zawiera wyrazy: " + A1;
+for (i=1; i<N; i++) {
+A1 = A1 + R;
+ciag = ciag + ", " + A1;
+} document.getElementById("wynik").innerHTML =  ciag; }
+</script>
+</div>
+<footer>
+<p>Autor: Beniamin</p>
+</footer>
+</body>
+</html>
