@@ -1,20 +1,12 @@
 <?php
-$connect = mysqli_connect("localhost","root","", /*NAZWA BAZY NP: */ "szkoła");
-if($connect)
-{
- $zapytanie = /* NAZWA ZAPYTANIA NP: */ "SELECT * FROM uczen";
+$connect = mysqli_connect("localhost","root","", "egzamin");
+if($connect) {
+ $zapytanie = "";
  $wynik= mysqli_query($connect,$zapytanie);
- if($wynik)
-  {
-   while($linia = mysqli_fetch_array($wynik))
-      {
-       echo "ID ucznia ".$linia["id"]." Nazwisko: ".$linia["nazwisko"].'<br>'; /* WYSWIETLA W KOLEJNOSCI ID -> NAZWISKO */
-      }
-  }
-mysqli_close($connect);
-}
-else
-  {
-   echo "Nie udało połączyć się z bazą danych";
-  }
+ if($wynik) {
+   while($linia = mysqli_fetch_array($wynik)) {
+       echo "ID ".$linia["id"].'<br>'; 
+} } mysqli_close($connect); }
+else {
+   echo "Nie udało połączyć się z bazą danych"; }
 ?>
