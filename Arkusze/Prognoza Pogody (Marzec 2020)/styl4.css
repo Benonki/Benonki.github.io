@@ -1,0 +1,46 @@
+body {
+	font-family: Garamond;
+}
+#b1, #b3 {
+	float: left;
+	background-color: RGB(95,158,160);
+	color: yellow;
+	width: 20%;
+	height: 90px;
+	text-align: right;
+}
+#b2 {
+	float: left;
+	background-color: RGB(95,158,160);
+	color: yellow;
+	width: 60%;
+	height: 90px;
+	text-align: center;
+}
+#l, #p {
+	float: left;
+	background-color: RGB(175,238,238);
+	width: 50%;
+	height: 250px;
+}
+main {
+	background-color: RGB(95,158,160);
+	padding: 30px;
+}
+footer {
+	background-color: RGB(175,238,238);
+	padding: 10px;
+}
+table {
+	border: 2px dotted green;
+	width: 100%;
+	border-collapse: collapse;
+}
+td {
+	border: 2px dotted green;
+}
+#n {
+	border: 2px dotted green;
+	background-color: green;
+	color: yellow;
+}
