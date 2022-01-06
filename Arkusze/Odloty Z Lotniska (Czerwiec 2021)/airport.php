@@ -42,7 +42,7 @@ mysqli_close($connect);	}
 <div id="s2">
 <?php
 $czas=3600; 
-setcookie("UserVisit", $czas);
+setcookie("UserVisit", "John Doe", $czas);
 if (isSet ($_COOKIE ['UserVisit']))  { 
 echo '<p>'."Miło nam, że nas znowu odwiedziłeś".'</p>'; 
 }  else  { 
