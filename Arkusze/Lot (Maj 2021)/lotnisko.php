@@ -43,7 +43,7 @@ else
 <div id="s1">
 <?php
 $czas = 7200; 
-setcookie ("UserVisit", $czas);
+setcookie ("UserVisit", "John Doe", $czas);
 if (isSet ($_COOKIE ['UserVisit'])) 
 { 
 echo '<p>'.'<i>'."Witaj ponownie  na stronie lotniska".'</i>'.'</p>'; 
